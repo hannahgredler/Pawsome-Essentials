@@ -1,0 +1,142 @@
+body {
+    background-color: #DDE5B6;
+    color: #6C584C;
+    margin: 0;
+}
+
+header {
+    background-image: url('https://images.pexels.com/photos/1144410/pexels-photo-1144410.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-position: center -380px, center;
+    background-repeat: no-repeat, no-repeat;
+    color: white;
+    background-color: #DDE5B6;
+    height: 300px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* Damit die Inhalte auf kleineren Bildschirmen nicht überlaufen */
+    width: 100%;
+}
+
+.logo {
+    height: 250px;
+    /* Größeres Logo */
+    position: relative; /* Ermöglicht die Verwendung von top und right */
+    top: -100px; /* Verschiebt das Logo 20px nach oben */
+    right: -150px; /* Verschiebt das Logo 20px nach rechts */
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+.menu-btn,
+.login-btn {
+    background-color: #DDE5B6;
+    color: #6C584C;
+    border-color: #6C584C;
+    border-width: 1.5px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    top: -370px;
+    right: 10%;
+}
+
+.menu-btn img {
+    width: 35px; /* Neue Größe des Bildes */
+    height: 25px; /* Neue Größe des Bildes */
+}
+
+.philosophy {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.phil_title{
+    text-align: center;
+    font-family: chalkboard;
+}
+
+.values {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.value {
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+.value h3 {
+    font-weight: bold;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: 1fr repeat(2, 2fr); */
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    margin-left: 50px;
+    justify-content: center;
+}
+
+.testimonial {
+    width: 80%;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin: 10px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: auto 1fr;;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    font-family:  'Roboto', BlinkMacSystemFont, "Open Sans", "Helvetica Neue", Arial, sans-serif;;
+}
+
+
+.customer-name {
+    text-align: right;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif ;
+    grid-column: 2;
+    grid-row: 3
+}
+
+.testimonial_img {
+    width: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+.testimonial_title {
+    grid-column: span 2;
+    /* Dieses Element erstreckt sich über beide Spalten */
+    font-family: Chalkboard;
+}
+
+.testimonial_text {
+    grid-column: span 2;
+}
+
+.testimonial_heading {
+    margin-top: 24px;
+}
+
